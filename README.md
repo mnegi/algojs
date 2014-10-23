@@ -13,6 +13,9 @@ While building the framework we will cover the following topics:
 
 - Javascript TDD using npm, gulp, karma and Jasmine
 - JavaScript web frameworks learning
+- Saucelab integration for multiple browser testing
+- JsHint for quality checks
+- Benchmark algorithms
 - Library architectures
 - Functional programming
 - Selectors
@@ -26,8 +29,16 @@ While building the framework we will cover the following topics:
 - Benchmarking and performance
 - Writing minifier-friendly JavaScript
 
-**Part I**
+----------
 
+##**Part I**
+
+- Coding guidelines
+- Minimal framework structure
+- TDD for javascript
+- Travis-CI integration
+
+### Coding guidelines
 The coding guidelines and the practices to develop this framework:
 
 1. **Verbose**: Variable and method names should be verbose so things are easy to find and understand
@@ -42,7 +53,7 @@ The coding guidelines and the practices to develop this framework:
 10. **Versioning**: GitHub to the rescue
 
 
-## The bare minimum framework
+### The bare minimum framework
 We have added the very basic structure for the framework. Here is the code snippet (core/**algojs.js**):
 
 ```JavaScript
@@ -70,7 +81,7 @@ We have added the very basic structure for the framework. Here is the code snipp
 })(typeof window == 'undefined' ? this : window);
 ```
 
-## Let's get the TDD done
+### Let's get the TDD done
 To make this work we have added **package.json**, **karma.conf.js**, **gulpfile.js** and a spec file test/**algojs.spec.js**. Peek into the repo for more details.
 
 ```shell
@@ -84,7 +95,7 @@ gulp test
 gulp tdd
 ```
 
-## Travis-CI integration
+### Travis-CI integration
 Now that we have TDD in place, the next thing we would like to do is to integrate it travis-ci. Register with the travis-ci.org, may be use github user id to make things really simple. Select the repo and get started.
 Also we will need a .YML file. This is how our **.travis.yml** file.
 
@@ -100,12 +111,25 @@ notifications:
     - samar.panda84@gmail.com
     - manohar.negi@gmail.com
 ```
-## Show the build status in this page
+### Show the build status in this page
 
 For us its just to add the below markdown in the **README.md** file
 ```markdwon
 [![Build Status](https://travis-ci.org/mnegi/algojs.svg?branch=master)](https://travis-ci.org/mnegi/algojs)
 ```
+
+
+----------
+
+##**Part II**
+
+- Enhancing core JS framework structure
+- JsHint for quality
+- Benchmarking algorithms
+- Saucelab integration
+
+
+----------
 
 ##Authors
 - Manohar Negi
