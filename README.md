@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/mnegi/algojs.svg?branch=master)](https://travis-ci.org/mnegi/algojs)
+#AlgoJS [![Build Status](https://secure.travis-ci.org/mnegi/algojs.svg?branch=master)](http://travis-ci.org/mnegi/algojs)
 
 ##Author
 ----------
@@ -8,7 +8,6 @@
 ##An algorithmic javascript framework.
 =======
 ##A Javascript framework with implementation of major computer science algorithms and data structures
->>>>>>> origin/master
 ----------
 
 Let's make a new javascript framework to implement all the major computer science algorithms and data structures. During this implementation we want to learn the actual algorithms and a way to build javascript framework. The implementation span in following phases:
