@@ -1,20 +1,15 @@
-
-#**AlgoJS**
-##Author
-----------
-- Manohar Negi
-- Samar Panda
-
-##An algorithmic javascript framework.
+##A Javascript framework with implementation of major computer science algorithms and data structures
 ----------
 
-Lets make a new javascript framework to implement all the algorithms. During this implementation we want to learn the actual algorithms and a way to build javascript framework. The implementation span in three phases:
+Let's make a new javascript framework to implement all the major computer science algorithms and data structures. During this implementation we want to learn the actual algorithms and a way to build javascript framework. The implementation span in following phases:
 1. Core JS framework
-2. Visualisation JS framework
-3. Web App using the core and visualisation frameworks alongwith some other technologies for server side coding.
+2. JS unit testing and TDD
+3. Visualisation framework in JS
+4. Web App using the core and visualisation frameworks alongwith some other technologies for server side coding.
 
 While building the framework we will cover the following:
 
+- Javascript TDD using npm, gulp, karma and Jasmine
 - JavaScript web frameworks learning
 - Library architectures
 - Functional programming
@@ -28,10 +23,6 @@ While building the framework we will cover the following:
 - Clean, reusable API design
 - Benchmarking and performance
 - Writing minifier-friendly JavaScript
-- jQuery
-- Prototype
-- MooTools
-- BBC Glow
 
 **Part I**
 
@@ -61,3 +52,6 @@ gulp test
 gulp tdd
 ```
 
+##Authors
+- Manohar Negi
+- Samar Panda
