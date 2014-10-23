@@ -1,5 +1,6 @@
 
-#**AlgoJS**
+#AlgoJS [![Build Status](https://secure.travis-ci.org/mnegi/algojs.png)](http://travis-ci.org/mnegi/algojs)
+
 ##Author
 ----------
 - Manohar Negi
