@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/mnegi/algojs.svg?branch=master)](https://travis-ci.org/mnegi/algojs)
 
 ##A Javascript framework with implementation of major computer science algorithms and data structures
-----------
+
 Let's make a new javascript framework to implement all the major computer science algorithms and data structures. During this implementation we want to learn the actual algorithms and a way to build javascript framework. The implementation span in following phases:
 
 1. Core JS framework
@@ -100,7 +100,7 @@ notifications:
     - samar.panda84@gmail.com
     - manohar.negi@gmail.com
 ```
-## Let the build status get reflected
+## Show the build status in this page
 
 For us its just to add the below markdown in the **README.md** file
 ```markdwon
@@ -108,5 +108,5 @@ For us its just to add the below markdown in the **README.md** file
 ```
 
 ##Authors
--- Manohar Negi
--- Samar Panda
+- Manohar Negi
+- Samar Panda

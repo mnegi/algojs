@@ -1,4 +1,4 @@
-// Karma configuration
+// Karma configuration - Test runner
 // Generated on Sun Oct 19 2014 13:03:33 GMT+0530 (IST)
 
 module.exports = function(config) {
