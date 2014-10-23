@@ -1,10 +1,5 @@
 #AlgoJS [![Build Status](https://secure.travis-ci.org/mnegi/algojs.svg?branch=master)](http://travis-ci.org/mnegi/algojs)
 
-##Author
-----------
-- Manohar Negi
-- Samar Panda
-
 ##An algorithmic javascript framework.
 =======
 ##A Javascript framework with implementation of major computer science algorithms and data structures
