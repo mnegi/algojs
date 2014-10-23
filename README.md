@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mnegi/algojs.svg?branch=master)](https://travis-ci.org/mnegi/algojs)
+
 ##A Javascript framework with implementation of major computer science algorithms and data structures
 ----------
 
