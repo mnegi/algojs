@@ -9,8 +9,9 @@ global window
 
 		linearSearch: function(values, target){
 			for(var i=0; i<values.length; i++){
-				if(values[i] === target)
+				if(values[i] === target){
 					return i;
+				}
 			}
 			return -1;
 		}
