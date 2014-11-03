@@ -1,0 +1,10 @@
+{
+	"camelcase": true,
+	"undef": true,
+	"unused": "vars",
+	"curly": true,
+	"immed": true,
+	"newcap": true,
+	"noarg": true,
+	"forin": true
+}
