@@ -118,14 +118,6 @@ For us its just to add the below markdown in the **README.md** file
 [![Build Status](https://travis-ci.org/mnegi/algojs.svg?branch=master)](https://travis-ci.org/mnegi/algojs)
 ```
 
-----------
-
-## JSHint
-
-* Before committing please run `gulp lint` for javascript precompile linting.
-* We are using `.jshintrc` for all jshint configurations.
-* Please follow [jshint options](http://www.jshint.com/docs/options/) for documentation and configurations.
-
 
 ----------
 
