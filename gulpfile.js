@@ -24,6 +24,15 @@ gulp.task('travis-test', function(done){
 });
 
 /**
+* karma saucelab integration
+*/
+gulp.task('ci', function(done){
+	karma.start({
+		configFile: __dirname + '/karma.conf.ci.js'
+	}, done);
+});
+
+/**
 * Watch for file changes and re-run tests on each change
 */
 gulp.task('tdd', function(done){
