@@ -139,6 +139,16 @@ For us its just to add the below markdown in the **README.md** file
 
 ----------
 
+##**Part III**
+
+- Add algorithms
+- Enhancing core JS framework structure
+- Benchmarking algorithms
+- Distribution
+- Algorithms analysis
+
+----------
+
 ##Authors
 - Manohar Negi
 - Samar Panda
