@@ -43,4 +43,8 @@ describe('Test Dijkstra private functions', function(){
 	it('Extract keys', function(){
 		expect(this.testOnly.extractKeys(this.obj)).toEqual(['a', 'b', 'c']);
 	});
+
+	it('shorter function to be defined', function(){
+		expect(this.testOnly.shorter).toBeDefined();
+	});
 });
