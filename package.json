@@ -26,6 +26,7 @@
     "gulp-jshint": "~1.8.6",
     "karma-sauce-launcher": "~0.2.10",
     "gulp-load-plugins": "~0.7.1",
-    "gulp-strip-code": "~0.1.2"
+    "gulp-strip-code": "~0.1.2",
+    "karma-coverage": "~0.2.6"
   }
 }

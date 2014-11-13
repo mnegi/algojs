@@ -47,4 +47,8 @@ describe('Test Dijkstra private functions', function(){
 	it('shorter function to be defined', function(){
 		expect(this.testOnly.shorter).toBeDefined();
 	});
+
+	it('Call shorter function', function(){
+		expect(this.testOnly.shorter(5, 2)).toEqual(3);
+	});
 });
