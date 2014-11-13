@@ -38,6 +38,10 @@ While building the framework we will cover the following topics:
 - TDD for javascript
 - Travis-CI integration
 
+##**Part II**
+- Saucelab integration
+- JsHint for quality
+
 ### Coding guidelines
 The coding guidelines and the practices to develop this framework:
 
@@ -52,72 +56,6 @@ The coding guidelines and the practices to develop this framework:
 9. **Testing**: Test first development for both browsers and console
 10. **Versioning**: GitHub to the rescue
 
-
-### The bare minimum framework
-We have added the very basic structure for the framework. Here is the code snippet (core/**algojs.js**):
-
-```JavaScript
-(function(global){
-	var algojs = {
-		VERSION: '0.0.1',
-
-		authors: ["manohar","samar"],
-
-		/* finds an element in the array using linear search algorithm */
-		linear_search: function(values, target){
-			for(var i=0; i<values.length; i++){
-				if(values[i] === target)
-					return i;
-			}
-			return -1;
-		}
-	};
-
-	if(global.algojs){
-		throw new Error('algojs has already been defined');
-	}else{
-		global.algojs = algojs;
-	}
-})(typeof window == 'undefined' ? this : window);
-```
-
-### Let's get the TDD done
-To make this work we have added **package.json**, **karma.conf.js**, **gulpfile.js** and a spec file test/**algojs.spec.js**. Peek into the repo for more details.
-
-```shell
-## To install dependency run the below command.
-npm install
-
-## To execute test
-gulp test
-
-## Running tdd and watching file changes
-gulp tdd
-```
-
-### Travis-CI integration
-Now that we have TDD in place, the next thing we would like to do is to integrate it travis-ci. Register with the travis-ci.org, may be use github user id to make things really simple. Select the repo and get started.
-Also we will need a .YML file. This is how our **.travis.yml** file.
-
-```yml
-language: node_js
-node_js:
-  - "0.10"
-before_script:
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
-notifications:
-  email:
-    - samar.panda84@gmail.com
-    - manohar.negi@gmail.com
-```
-### Show the build status in this page
-
-For us its just to add the below markdown in the **README.md** file
-```markdwon
-[![Build Status](https://travis-ci.org/mnegi/algojs.svg?branch=master)](https://travis-ci.org/mnegi/algojs)
-```
-
 ----------
 
 ## JSHint
@@ -126,16 +64,26 @@ For us its just to add the below markdown in the **README.md** file
 * We are using `.jshintrc` for all jshint configurations.
 * Please follow [jshint options](http://www.jshint.com/docs/options/) for documentation and configurations.
 
+----------
+## Saucelab Integration
+
+* Need to have a saucelab account and create a sauce.json file having username & password in the root directory of the project.
+* Format of sauce.json
+```json
+{
+    "username": "saucelab_username",
+    "accessKey": "saucelab_key"
+}
+```
+* Command to trigger our build in saucelab cloud infrastructure `gulp ci`
 
 ----------
 
-##**Part II**
+##**Part III**
 
 - Enhancing core JS framework structure
-- JsHint for quality
 - Benchmarking algorithms
-- Saucelab integration
-
+- Add algorithms
 
 ----------
 
