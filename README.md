@@ -41,6 +41,7 @@ While building the framework we will cover the following topics:
 ##**Part II**
 - Saucelab integration
 - JsHint for quality
+- Start adding algorithms
 
 ### Coding guidelines
 The coding guidelines and the practices to develop this framework:
@@ -83,11 +84,10 @@ The coding guidelines and the practices to develop this framework:
 
 - Enhancing core JS framework structure
 - Benchmarking algorithms
-- Add algorithms
 
 ----------
 
-##**Part III**
+##**Part IV**
 
 - Add algorithms
 - Enhancing core JS framework structure
