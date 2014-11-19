@@ -36,6 +36,30 @@ describe('Test Dijkstra private functions', function(){
 		this.testOnly = null;
 	});
 
+	it('Tracks that a specific method has been called.', function(){
+		spyOn(this.testOnly, 'shorter');
+		this.testOnly.shorter(5, 3);
+		expect(this.testOnly.shorter).toHaveBeenCalled();
+	});
+
+	it('Function to have been called with', function(){
+		spyOn(this.testOnly, 'shorter');
+		this.testOnly.shorter(5, 3);
+		expect(this.testOnly.shorter).toHaveBeenCalledWith(5, 3);
+	});
+
+	it('Function call count', function(){
+		spyOn(this.testOnly, 'shorter');
+		this.testOnly.shorter(5, 3);
+		expect(this.testOnly.shorter.callCount).toEqual(1);
+	});
+
+	it('Function call parameters', function(){
+		spyOn(this.testOnly, 'shorter');
+		this.testOnly.shorter(5, 3);
+		expect(this.testOnly.shorter.mostRecentCall.args).toEqual([5, 3]);
+	});
+
 	it('extractKeys function to be defined', function(){
 		expect(this.testOnly.extractKeys).toBeDefined();
 	});
