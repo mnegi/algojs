@@ -63,4 +63,13 @@ gulp.task('dist', function(){
 		.pipe(gulp.dest('dist/'));
 });
 
+/**
+* Test coverage
+*/
+gulp.task('coverage', function(done){
+	karma.start({
+		configFile: __dirname + '/karma.istanbul.js'
+	}, done);
+});
+
 gulp.task('default', ['tdd']);
