@@ -47,13 +47,13 @@ Also we will need a .YML file. This is how our **.travis.yml** file.
 ```yml
 language: node_js
 node_js:
-  - "0.10"
+  - "10.13.0"
 before_script:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
 notifications:
   email:
-    - samar.panda84@gmail.com
+    - er.samarpanda@gmail.com
     - manohar.negi@gmail.com
 ```
 ### Show the build status in this page
