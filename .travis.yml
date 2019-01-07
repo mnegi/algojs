@@ -6,5 +6,4 @@ before_script:
   - sh -e /etc/init.d/xvfb start
 notifications:
   email:
-    - samar.panda84@gmail.com
-    - manohar.negi@gmail.com
+    - er.samarpanda@gmail.com
