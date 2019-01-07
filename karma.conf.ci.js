@@ -22,20 +22,20 @@ module.exports = function(config) {
     'SL_Firefox': {
       base: 'SauceLabs',
       browserName: 'firefox',
-      version: '26'
+      // version: '26'
     },
     'SL_Safari': {
       base: 'SauceLabs',
       browserName: 'safari',
-      platform: 'OS X 10.9',
-      version: '7'
-    },
+      platform: 'OS X 10.12',
+      // version: '7'
+    }
     /*'SL_IE_7': {
       base: 'SauceLabs',
       browserName: 'internet explorer',
       platform: 'Windows XP',
       version: '7'
-    },*/
+    },
     'SL_IE_8': {
       base: 'SauceLabs',
       browserName: 'internet explorer',
@@ -59,7 +59,7 @@ module.exports = function(config) {
       browserName: 'internet explorer',
       platform: 'Windows 8.1',
       version: '11'
-    }
+    }*/
   };
 
   config.set({

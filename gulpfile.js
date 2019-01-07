@@ -63,4 +63,4 @@ gulp.task('dist', function(){
 		.pipe(gulp.dest('dist/'));
 });
 
-gulp.task('default', ['tdd']);
+gulp.task('default', gulp.series('tdd', function(){}))
