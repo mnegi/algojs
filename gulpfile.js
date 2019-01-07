@@ -1,45 +1,60 @@
 var gulp = require('gulp');
 var gulpLoadPlugins = require('gulp-load-plugins'),
 	plugins = gulpLoadPlugins();
-var karma = require('karma').server;
+var Server = require('karma').Server;
+
+function startServer(kconfig, done){
+	var server = new Server(kconfig, function(exitCode){
+		console.log(`Karma has exited with ${exitCode}`)
+		process.exit(exitCode)
+	})
+	server.start()
+	if(done !== undefined){
+		done()
+	}
+}
 
 /**
 * Run test once and exit
 */
 gulp.task('test', function(done){
-	karma.start({
+	var kconfig = {
 		configFile: __dirname + '/karma.conf.js',
 		singleRun: true
-	}, done);
+	}
+	startServer(kconfig, done);
 });
 
 /**
 * Travis test using firefox
 */
 gulp.task('travis-test', function(done){
-	karma.start({
+	var kconfig = {
 		configFile: __dirname + '/karma.conf.js',
 		browsers: ['Firefox'],
 		singleRun: true
-	}, done);
+	}
+	startServer(kconfig, done)
 });
 
 /**
 * karma saucelab integration
 */
 gulp.task('ci', function(done){
-	karma.start({
+	var kconfig = {
 		configFile: __dirname + '/karma.conf.ci.js'
-	}, done);
+	}
+	startServer(kconfig, done)
 });
 
 /**
 * Watch for file changes and re-run tests on each change
 */
 gulp.task('tdd', function(done){
-	karma.start({
+	var kconfig = {
 		configFile: __dirname + '/karma.conf.js'
-	}, done);
+	}
+	startServer(kconfig, done)
 });
 
 /**
